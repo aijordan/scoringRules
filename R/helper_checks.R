@@ -176,9 +176,9 @@ check_sizes_VecMat <- function(input, types) {
     reference_formats <- sapply(types, function(x) {
       switch(
         x,
-        vec = "vector[1:n]",
-        mat = "matrix[1:n, 1:m]",
-        scl = "scalar[1]"
+        vector = "vector[1:n]",
+        matrix = "matrix[1:n, 1:m]",
+        scalar = "scalar[1]"
       )
     })
     
